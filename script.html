@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: #e70c0c;
+                text-align: center;
+            }
+            button{
+                color: black;
+                background-color: blanchedalmond;
+                height: 40;
+                font-size: large;
+                align-self: center;
+                animation: alternate; 
+            }
+            input{
+                background-color: cadetblue;
+                font-size: large;
+                color: black;
+                text-align: center;
+            }
+            .btn1:hover{
+                background-color: aqua;
+            }
+        </style>
+        <script type="text/javascript">
+            function fn1()
+            {
+                var str = document.getElementById('text1').value;
+                if(str=="Shridatta"){
+                    document.write("<h1>Click below link to continue</h1>")
+                    document.write("<a href='/script2.html'>Click</a>")
+                }
+                else{
+                    alert("Login Unsuccessful")
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Login Form</h1>
+        
+        <input id="text1" placeholder='Username'>
+        <br><br>
+        <button style="opacity: initial;" onclick="fn1()" id="btn1">Click me</button>
+        
+    </body>
+
+</html>
